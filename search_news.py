@@ -18,5 +18,5 @@ def news_search(news):
      return a
 
 
-url= "けもフレ"
+url= "アニメ"
 print  news_search(url)
