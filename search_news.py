@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
-from requests_oauthlib import OAuth1Session
+#from requests_oauthlib import OAuth1Session
 import json
 import requests
 from bs4 import BeautifulSoup
@@ -18,5 +18,5 @@ def news_search(news):
      return a
 
 
-url= "アニメ"
+url= "ゲーム"
 print  news_search(url)
