@@ -6,7 +6,6 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
-
 def news_search(news):
      url="https://news.google.com/news/search/section/q/"+news
      res=requests.get(url)
@@ -16,7 +15,6 @@ def news_search(news):
      except:
          a=""
      return a
-
 
 url= "ゲーム"
 print  news_search(url)
