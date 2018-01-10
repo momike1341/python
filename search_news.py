@@ -16,5 +16,5 @@ def news_search(news):
          a=""
      return a
 
-url= "ゲーム"
+url= "github"
 print  news_search(url)
