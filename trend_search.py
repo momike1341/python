@@ -41,8 +41,6 @@ def main():
             keyword.update ({tweet["name"]:t})
     return
 
-
-
 def news_search(news):
     url="https://news.google.com/news/search/section/q/"+news
     res=requests.get(url)
@@ -52,6 +50,7 @@ def news_search(news):
     except:
         a=""
     return a
+
 def create_oath_session(oath_key_dict):
     oath = OAuth1Session(
     oath_key_dict["consumer_key"],
