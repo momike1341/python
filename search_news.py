@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 import re
 
 def news_search(news):
-     url="https://news.google.com/news/search/section/q/"+unicode(news)
+     url="https://news.google.com/news/search/section/q/"+news
      res=requests.get(url)
      s=BeautifulSoup(res.content,"html.parser")
      try:
