@@ -77,7 +77,7 @@ def tweet_search(search_word, oath_key_dict,oldest_id):
         "q": unicode(search_word),
         "lang": "ja",
         "result_type": "recent",
-        "count": "25"
+        "count": "450"
         }
 
     if oldest_id != -1:
@@ -92,7 +92,7 @@ def tweet_search(search_word, oath_key_dict,oldest_id):
 
 
 if __name__ == "__main__":
-    for k in [1,2]:
+    for i in range(1,6):
         main()
         print "\n\n"
-        sleep(10)
+        sleep(60*15)
