@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 import re
 
 def news_search(news):
-     url="https://news.google.com/news/search/section/q/"+news
+     url="https://news.google.com/news/search/section/q/"+unicode(news)
      res=requests.get(url)
      s=BeautifulSoup(res.content,"html.parser")
      try:
@@ -16,5 +16,5 @@ def news_search(news):
          a=""
      return a
 
-url= "github"
-print  news_search(url)
+search_word= raw_input('>> ')
+print  news_search(search_word)
