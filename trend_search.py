@@ -74,6 +74,7 @@ def tweet_search(search_word, oath_key_dict):
     tweets = json.loads(responce.text)
     return tweets
 
+
 ### Execute
 if __name__ == "__main__":
     while(1):
