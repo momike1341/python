@@ -58,7 +58,7 @@ def create_oath_session(oath_key_dict):
     oath_key_dict["consumer_secret"],
     oath_key_dict["access_token"],
     oath_key_dict["access_token_secret"]
-    )
+    )6
     return oath
 
 def tweet_search(search_word, oath_key_dict):
