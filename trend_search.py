@@ -51,6 +51,7 @@ def news_search(news):
         a=""
     return a
 
+
 def create_oath_session(oath_key_dict):
     oath = OAuth1Session(
     oath_key_dict["consumer_key"],
