@@ -77,7 +77,7 @@ def tweet_search(search_word, oath_key_dict,oldest_id):
         "q": unicode(search_word),
         "lang": "ja",
         "result_type": "recent",
-        "count": "450"
+        "count": "1000"
         }
 
     if oldest_id != -1:
